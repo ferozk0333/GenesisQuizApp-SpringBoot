@@ -63,7 +63,7 @@ public class QuizService {
 		for(Response response:responses) {
 			if(response.getResponse().equals(questions.get(i)))
 				right++;
-			
+			i++;
 		}
 		
 		return new ResponseEntity<>(right,HttpStatus.OK);
